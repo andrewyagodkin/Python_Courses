@@ -10,7 +10,9 @@ import random
 
 def  list_gen(number_of_classes, number_of_marks):
     for i in range(0, number_of_classes):
+        list_of_dicts=[]
         for j in ['а','б','в','г','д']:
+            dictionary={}
             class_name = str(i)+str(j)
             marks_of_class = marks(number_of_marks)
             dictionary['class'] = class_name
@@ -19,6 +21,7 @@ def  list_gen(number_of_classes, number_of_marks):
     return list_of_dicts
 
 def marks(number_of_marks):
+    marks_array=[]
     for i in range(0, number_of_marks):
         marks_array.append(random.randrage(2,5,1))
     return marks_array
