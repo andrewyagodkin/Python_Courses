@@ -27,11 +27,11 @@ def  avg(data_list, number_of_classes, number_of_marks):
     print('Средние значения:\n')
     for i in range(1, (number_of_classes*5)):
         avg_class = sum(data_list[i['marks_of_class']]) / len(data_list[i['marks_of_class']])
-        print ('В классе ' data_list[i['class']] 'средняя оценка по классу: ' avg_class)
+        print ('В классе '+data_list[i['class']]+'средняя оценка по классу: '+avg_class)
         sum_school = sum_school + sum(data_list[i['marks_of_class']])
         number_school = number_school + len(data_list[i['marks_of_class']])
     school_avg = sum_school / number_school 
-    print('Средняя оценка по школе:' school_avg)
+    print('Средняя оценка по школе:'+school_avg)
 
 
 def common():
